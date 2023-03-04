@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "htb-peng"
+version = "0.1.0"
+description = "Hack the Burgh 2023"
+authors = ["JorVLP <47005135+JorVLP@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "htb_peng"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+gpiozero = "^1.6.2"
+pigpio = "^1.78"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
