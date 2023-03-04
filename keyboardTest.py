@@ -1,13 +1,13 @@
 # import time
 # import RPi.GPIO as GPIO
-from gpiozero import PWMLED
+from gpiozero import PWMLED, DigitalInputDevice, DigitalOutputDevice
 from gpiozero.pins.pigpio import PiGPIOFactory
 from time import sleep
 import gpiozero.spi_devices
 
 factory = PiGPIOFactory(host="192.168.62.107")
-pinOutput = gpiozero.DigitalOutputDevice()
-pinInput = gpiozero.DigitalInputDevice()
+pinOutput = DigitalOutputDevice(pin_factory=factory)
+pinInput = DigitalInputDevice(pin_factory=factory)
 
 #gpiozero.DigitalInputDevice(pin, *, pull_up=False, active_state=None, bounce_time=None, pin_factory=None)
 # Keypad - Row Pins, output

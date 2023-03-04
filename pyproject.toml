@@ -10,6 +10,9 @@ packages = [{include = "htb_peng"}]
 python = "^3.10"
 gpiozero = "^1.6.2"
 pigpio = "^1.78"
+mypy = {extras = ["d"], version = "^1.0.1"}
+adafruit-circuitpython-ssd1351 = "^1.3.7"
+adafruit-circuitpython-st7735 = "^1.2.8"
 
 
 [build-system]
